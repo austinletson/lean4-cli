@@ -9,6 +9,7 @@ jobs:
     name: build lean4-cli
     runs-on: ubuntu-latest
     steps:
-      - uses: leanprover/lean-action@main
+      - uses: leanprover/lean-action@release/v1-alpha
         with:
           test: false
+          check-reservoir-eligibility: true
